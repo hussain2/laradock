@@ -17,8 +17,6 @@ EXPOSE 80 443
 
 WORKDIR /var/www/
 
-COPY vhost.conf /etc/apache2/sites-enabled/vhost.conf
-
 ENTRYPOINT ["/opt/docker/bin/entrypoint.sh"]
 
 CMD ["supervisord"]
